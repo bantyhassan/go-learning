@@ -18,6 +18,11 @@ func main() {
 
 	emp1 := emplyoee{"Hassan", "Ahamed", address{"Lalkuthi Road", "Midnapore", "721101"}}
 
-	fmt.Println(emp1)
+	emp1.print()
 
+}
+
+func (e emplyoee) print() {
+	// fmt.Println(e)
+	fmt.Printf("%+v", e)
 }
